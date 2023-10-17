@@ -1,0 +1,18 @@
+.specs-content {
+    background-color: #FFF;
+    margin: 3rem;
+}
+
+.specs-content .specs-info {
+    padding: 2rem 3rem;
+}
+
+.specs-content .specs-info .specs h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.specs-content .specs-info .specs ul {
+    font-size: 20px;
+    font-weight: 400;
+}
