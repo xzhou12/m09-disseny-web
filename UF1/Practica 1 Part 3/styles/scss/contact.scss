@@ -1,0 +1,44 @@
+.contact {
+    padding: 4rem 9rem;
+
+    h1 {
+        font-size: 60px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 20px;
+
+        input, textarea {
+            height: 40px;
+            border-radius: 25px;
+            border: 0;
+            text-indent: 15px;
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+            max-height: 400px;
+        }
+
+
+        .boton-enviar {
+            color: #FFF;
+            background-color: #000;
+            font-size: 18px;
+            font-weight: 600;
+            height: 50px;
+        }
+    }
+}

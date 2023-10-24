@@ -1,0 +1,32 @@
+.history-content {
+    background-color: #FFF;
+    margin: 3rem;
+
+    .timeline {
+        padding: 2rem 3rem;
+
+        .stage {
+            .year {
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            .info {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 2rem;
+
+        img {
+            max-width: 600px;
+            width: 100%;
+        }
+    }
+}
