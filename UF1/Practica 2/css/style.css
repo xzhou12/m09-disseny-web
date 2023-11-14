@@ -1,0 +1,15 @@
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+  max-width: 500px;
+  max-height: 500px;
+  margin: auto;
+}
+.grid > div {
+  width: calc(20% - 4px);
+  height: 90px;
+  background-color: lightblue;
+}
+
+/*# sourceMappingURL=style.css.map */
