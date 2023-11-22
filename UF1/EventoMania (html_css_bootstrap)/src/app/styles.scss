@@ -1,0 +1,102 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+$gradient: linear-gradient(90deg, rgba(187,174,238,1) 0%, rgba(148,187,233,1) 100%);
+
+.container {
+  font-family: 'Inter', sans-serif;
+  padding: 3rem 0;
+}
+
+.proximos-eventos, .eventos-pasados{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+.selector {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  padding: 1rem;
+  border: 1px solid darkgray;
+  border-radius: 40px;
+  background: #F9F9F9;
+  position: relative;
+
+  label {
+    flex-basis: 30%;
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  select {
+    width: 100%;
+    border: none;
+    background-color: #F9F9F9;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    background: url("../assets/arrow-collapse.png") no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transform: translateY(-50%);
+    pointer-events: none;
+    right: 2rem;
+    top: 1.5rem;
+  }
+}
+
+.content {
+  margin-top: 2rem;
+  padding: 3.5rem 3.5rem;
+  border: 1px solid darkgray;
+  border-radius: 40px;
+  background: #F9F9F9;
+
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    width: fit-content;
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .proximos-eventos,
+  .eventos-pasados {
+    margin: 1rem 0;
+
+    > div {
+      border: 1px solid darkgray;
+      padding: 2rem;
+      background: #FFF;
+      border-radius: 40px;
+      transition: 0.5s;
+      box-shadow: 0 4px 9px -5px #000;
+
+      &:hover {
+        background: #F9F9F9;
+        scale: 120%;
+        transition: 0.5s;
+      }
+    }
+  }
+}

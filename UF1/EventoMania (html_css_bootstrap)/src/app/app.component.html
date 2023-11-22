@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="selector">
+    <label for="direccion">Selecciona una dirección:</label>
+    <select (change)="direccionCambiada()" [(ngModel)]="direccionSeleccionada" id="direccion" name="direccion">
+      <option value="none">Ninguna</option>
+      <option selected="selected" value="all">Todas las direcciones</option>
+      <option *ngFor="let direccion of direcciones" [value]="direccion">{{ direccion }}</option>
+    </select>
+  </div>
+
+  <div class="content">
+    <h1>Proximos eventos</h1>
+    <div *ngIf="proximosEventos.length != 0; else sinResultados" class="proximos-eventos">
+      <div *ngFor="let evento of proximosEventos">
+        <p><b>Titulo: </b>{{ evento.titulo }}</p>
+        <p><b>Artista: </b>{{ evento.artista }}</p>
+        <p><b>Direccion: </b>{{ evento.direccion }}</p>
+        <p><b>Fecha: </b>{{ evento.fecha | date:"d/m/Y 'a las' hh:mm" }}</p>
+        <ng-container *ngIf="evento.precio !== 0; else gratis">
+          <p><b>Precio: </b>{{ evento.precio | currency:'EUR' }}</p>
+        </ng-container>
+      </div>
+    </div>
+
+    <br>
+
+    <h1>Eventos pasados</h1>
+    <div *ngIf="eventosPasados.length != 0; else sinResultados" class="eventos-pasados">
+      <div *ngFor="let evento of eventosPasados">
+        <p><b>Titulo: </b>{{ evento.titulo }}</p>
+        <p><b>Artista: </b>{{ evento.artista }}</p>
+        <p><b>Direccion: </b>{{ evento.direccion }}</p>
+        <p><b>Fecha: </b>{{ evento.fecha | date:"d/m/Y 'a las' hh:mm" }}</p>
+        <ng-container *ngIf="evento.precio !== 0; else gratis">
+          <p><b>Precio: </b>{{ evento.precio | currency:'EUR' }}</p>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<ng-template #gratis>
+  <p><b>Precio: </b>Gratis</p>
+</ng-template>
+
+<ng-template #sinResultados>
+  <h2>Sin eventos por mostrar</h2>
+</ng-template>
