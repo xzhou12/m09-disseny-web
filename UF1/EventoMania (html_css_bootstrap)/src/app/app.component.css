@@ -35,6 +35,7 @@
   width: 100%;
   border: none;
   background-color: #F9F9F9;
+  color: #434343;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -72,6 +73,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.content .message {
+  color: #434343;
+}
 .content .proximos-eventos,
 .content .eventos-pasados {
   margin: 1rem 0;
@@ -82,14 +86,18 @@
   padding: 2rem;
   background: #FFF;
   border-radius: 40px;
-  transition: 0.5s;
+  transition-duration: 0.2s;
   box-shadow: 0 4px 9px -5px #000;
+}
+.content .proximos-eventos > div p,
+.content .eventos-pasados > div p {
+  color: #434343;
 }
 .content .proximos-eventos > div:hover,
 .content .eventos-pasados > div:hover {
   background: #F9F9F9;
   scale: 120%;
-  transition: 0.5s;
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=app.component.css.map */

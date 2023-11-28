@@ -38,6 +38,7 @@ $gradient: linear-gradient(90deg, rgba(187,174,238,1) 0%, rgba(148,187,233,1) 10
     width: 100%;
     border: none;
     background-color: #F9F9F9;
+    color: #434343;
 
     appearance: none;
     -webkit-appearance: none;
@@ -80,6 +81,10 @@ $gradient: linear-gradient(90deg, rgba(187,174,238,1) 0%, rgba(148,187,233,1) 10
     -webkit-text-fill-color: transparent;
   }
 
+  .message {
+    color: #434343;
+  }
+
   .proximos-eventos,
   .eventos-pasados {
     margin: 1rem 0;
@@ -89,13 +94,17 @@ $gradient: linear-gradient(90deg, rgba(187,174,238,1) 0%, rgba(148,187,233,1) 10
       padding: 2rem;
       background: #FFF;
       border-radius: 40px;
-      transition: 0.5s;
+      transition-duration: 0.2s;
       box-shadow: 0 4px 9px -5px #000;
+
+      p {
+        color: #434343;
+      }
 
       &:hover {
         background: #F9F9F9;
         scale: 120%;
-        transition: 0.5s;
+        transition-duration: 0.5s;
       }
     }
   }
