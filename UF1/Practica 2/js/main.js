@@ -65,7 +65,7 @@ $(document).ready(function(){
     function actualizarContador() {
         var segundos = Math.floor(contador / 1000);
         var milisegundos = Math.floor((contador % 1000) / 100); // Convertir milisegundos a centésimas
-        $('#contador').text(segundos + ',' + milisegundos + ' seundos');
+        $('#contador').text(segundos + '.' + milisegundos + ' sec.');
     }
 
 });
