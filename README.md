@@ -9,3 +9,4 @@
 * [**Activitat 4 Repaso HTML-CSS Entrega**](https://github.com/xzhou12/m09-disseny-web/tree/UF1/UF1/Actividad%204%20Repaso%20HTML-CSS)
 * [**EventoMania - Interfaz Gráfica con HTML+CSS+Bootstrap**](https://github.com/xzhou12/m09-disseny-web/tree/UF1/UF1/EventoMania%20(html_css_bootstrap))
 * [**Practica 2 - 1 to 50**](https://github.com/xzhou12/m09-disseny-web/tree/UF1/UF1/Practica%202)
+* [**Entrega Parcial 2**](https://github.com/xzhou12/m09-disseny-web/tree/UF1/UF1/Parcial%202)
